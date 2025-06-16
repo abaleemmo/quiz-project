@@ -169,7 +169,7 @@ button {
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background: var(--nose, #ffc0cb);
+  background: #ffc0cb;
   border-radius: 50%;
   z-index: 3;
 }
@@ -181,7 +181,7 @@ button {
   left: 50%;
   width: 20px;
   height: 220px;
-  background: var(--stem, #51d691);
+  background:  #51d691;
   border-radius: 10px;
   transform: translateX(-50%);
   z-index: 0;
@@ -213,7 +213,7 @@ button {
   left: 50%;
   width: 120px;
   height: 60px;
-  background: var(--pot, #FF7043);
+  background: #FF7043;
   border-radius: 0 0 40px 40px;
   transform: translateX(-50%);
   z-index: 2;
