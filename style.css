@@ -130,7 +130,7 @@ button {
   left: 50%;
   width: 160px;
   height: 160px;
-  background: #fffbe7;
+  background: lightyellow;
   border-radius: 50%;
   transform: translate(-50%, 0);
   z-index: 2; /* ensure head is above petals */
@@ -149,6 +149,8 @@ button {
   background: #fff;
   border-radius: 50%;
   z-index: 3;
+  border-style: solid;
+  border-color: black;
 }
 .flower__eye.left { left: 45px; }
 .flower__eye.right { right: 45px; }
@@ -237,4 +239,23 @@ button {
   border-radius: 0 0 10px 10px;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+@keyframes blink {
+  0%, 100% {
+    transform: scale(1, 0.05);
+  }
+  5%, 95% {
+    transform: scale(1, 1);
+  }
+}
+
+.flower__eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 50%;
+  animation: blink 3s infinite; /* animation added */
 }
