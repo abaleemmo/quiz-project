@@ -7,17 +7,53 @@
         <script defer src="script.js"></script>
     </head>
     <body>
-        <div class="title">
-            <h1>Your Quiz Title Here!</h1>
+  <div class="title">
+    <h1>Make a flower</h1>
+  </div>
+  <div class="container">
+    <div class="questions">
+      <h4>What colors will your flower have?<h4>
+      <button class="q1-a1">Bright</button>
+      <button class="q1-a2">Dull</button>
+      <h4>Will your flower be strong or fragile?</h4>
+      <button class="q2-a1">Strong</button>
+      <button class="q2-a2">Fragile</button>
+      <h4>How much attention will your flower need?<h4>
+      <button class="q3-a1">A lot</button>
+      <button class="q3-a2">A little</button>
+      <h4></h4>
+      <button class="q4-a1"></button>
+      <button class="q4-a2"></button>
+    </div>
+    <div class="result">
+      <div class="flower">
+        <!-- Petals -->
+        <div class="flower__petal" style="--i:0"></div>
+        <div class="flower__petal" style="--i:1"></div>
+        <div class="flower__petal" style="--i:2"></div>
+        <div class="flower__petal" style="--i:3"></div>
+        <div class="flower__petal" style="--i:4"></div>
+        <div class="flower__petal" style="--i:5"></div>
+        <div class="flower__petal" style="--i:6"></div>
+        <div class="flower__petal" style="--i:7"></div>
+        <!-- Head/Face -->
+        <div class="flower__head">
+          <div class="flower__eye left"><span></span></div>
+          <div class="flower__eye right"><span></span></div>
+          <div class="flower__nose"></div>
         </div>
-        <div class="questions">
-            <h4>User Question #1</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/24/16/asset/815a5287257c/anigif_sub-buzz-4360-1624553394-78_preview.gif?output-quality=auto&output-format=auto&downsize=360:*">
-            <h4>User Question #2</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/19/17/asset/buzzfeed-prod-web-05/anigif_sub-buzz-18467-1542667455-1.gif">
+        <!-- Stem -->
+        <div class="flower__stem"></div>
+        <!-- Leaves -->
+        <div class="flower__leaf left"></div>
+        <div class="flower__leaf right"></div>
+        <!-- Pot -->
+        <div class="flower__pot">
+          <div class="flower__pot--shadow"></div>
+          <div class="flower__pot--bottom"></div>
         </div>
-        <div class="result">
-            This is where the user will see their quiz result.
-        </div>
-    </body>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
