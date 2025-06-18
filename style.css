@@ -107,10 +107,11 @@ button {
   --angle: calc(360deg / var(--petal-count));
   position: absolute;
   left: 50%;
-  top: 220px; /* shift petals up more to cover upper edge of face */
+  top: 215px; /* shift petals up more to cover upper edge of face */
   width: 70px;
   height: 100px;
-  background: #517bd6;
+  background: white;
+  border-color: black;
   border-radius: 50% 50% 50% 50% / 70% 70% 60% 60%;
   /* Center, rotate, and bring petals inward to overlap the head */
   transform:
