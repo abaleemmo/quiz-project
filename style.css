@@ -110,7 +110,7 @@ button {
   top: 220px; /* shift petals up more to cover upper edge of face */
   width: 70px;
   height: 100px;
-  background: var(--main-flower, #517bd6);
+  background: #517bd6;
   border-radius: 50% 50% 50% 50% / 70% 70% 60% 60%;
   /* Center, rotate, and bring petals inward to overlap the head */
   transform:
@@ -192,18 +192,20 @@ button {
   position: absolute;
   width: 80px;
   height: 40px;
-  background: var(--stem, #51d691);
+  background:#51d691;
   border-radius: 80px 80px 0 80px;
   top: 400px;
   z-index: 1;
 }
-.flower__leaf.left {
+.flower__leaf.leaf-left {
   left: calc(50% - 70px);
   transform: rotate(-35deg);
+  background:#51d691;
 }
-.flower__leaf.right {
+.flower__leaf.leaf-right {
   left: calc(50% - 10px);
   transform: scaleX(-1) rotate(-35deg);
+  background:#51d691;
 }
 
 /* Pot */
@@ -258,4 +260,16 @@ button {
   background: #fff;
   border-radius: 50%;
   animation: blink 3s infinite; /* animation added */
+}
+
+.petal-one, 
+.petal-two, 
+.petal-three, 
+.petal-four, 
+.petal-five, 
+.petal-six, 
+.petal-seven, 
+.petal-eight {
+  background: #517bd6;
+  box-shadow: #517bd6;
 }

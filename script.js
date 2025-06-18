@@ -16,29 +16,73 @@ let mouthColor;
 
 let mouth = document.querySelector(".flower__nose");
 let stem = document.querySelector(".flower__stem");
+let leaf1 = document.querySelector(".leaf-left");
+let leaf2 = document.querySelector(".leaf-right");
 let face = document.querySelector(".flower__head");
 let pot = document.querySelector(".flower__pot");
 let potShadow = document.querySelector(".flower__pot--shadow");
 let potBottom = document.querySelector(".flower__pot--bottom");
-let petals = document.querySelector(".flower__petal");
+let petal1 = document.querySelector(".petal-one");
+let petal2 = document.querySelector(".petal-two");
+let petal3 = document.querySelector(".petal-three");
+let petal4 = document.querySelector(".petal-four");
+let petal5 = document.querySelector(".petal-five");
+let petal6 = document.querySelector(".petal-six");
+let petal7 = document.querySelector(".petal-seven");
+let petal8 = document.querySelector(".petal-eight");
 
 
 bluePetalButton.addEventListener("click", function(){
     petalColor = "Blue";
+    petal1.style.background = "#517bd6";
+    petal1.style.boxShadow = "#517bd6";
+    petal2.style.background = "#517bd6";
+    petal2.style.boxShadow = "#517bd6";
+    petal3.style.background = "#517bd6";
+    petal3.style.boxShadow = "#517bd6";
+    petal4.style.background = "#517bd6";
+    petal4.style.boxShadow = "#517bd6";
+    petal5.style.background = "#517bd6";
+    petal5.style.boxShadow = "#517bd6";
+    petal6.style.background = "#517bd6";
+    petal6.style.boxShadow = "#517bd6";
+    petal7.style.background = "#517bd6";
+    petal7.style.boxShadow = "#517bd6";
+    petal8.style.background = "#517bd6";
+    petal8.style.boxShadow = "#517bd6";
 })
 yellowPetalButton.addEventListener("click", function(){
     petalColor = "Yellow";
+    petal1.style.background = "#FFFF00";
+    petal1.style.boxShadow = "#FFFF00";
+    petal2.style.background = "#FFFF00";
+    petal2.style.boxShadow = "#FFFF00";
+    petal3.style.background = "#FFFF00";
+    petal3.style.boxShadow = "#FFFF00";
+    petal4.style.background = "#FFFF00";
+    petal4.style.boxShadow = "#FFFF00";
+    petal5.style.background = "#FFFF00";
+    petal5.style.boxShadow = "#FFFF00";
+    petal6.style.background = "#FFFF00";
+    petal6.style.boxShadow = "#FFFF00";
+    petal7.style.background = "#FFFF00";
+    petal7.style.boxShadow = "#FFFF00";
+    petal8.style.background = "#FFFF00";
+    petal8.style.boxShadow = "#FFFF00";
 })
 
 
 darkGreenStemButton.addEventListener("click", function(){
     stemColor = "Dark Green";
     stem.style.background = "darkgreen";
+    leaf1.style.background = "darkgreen";
+    leaf2.style.background = "darkgreen";
 });
 lightGreenStemButton.addEventListener("click", function(){
     stemColor = "Light Green";
     stem.style.background = "#51d691";
-    leaves.style.background = "#51d691";
+    leaf1.style.background = "#51d691";
+    leaf2.style.background = "#51d691"
 });
 
 
