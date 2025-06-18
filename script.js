@@ -8,11 +8,15 @@ let blackPotButton = document.querySelector(".q4-a1");
 let brownPotButton = document.querySelector(".q4-a2");
 let lightRedMouthButton = document.querySelector(".q5-a1");
 let blackMouthButton = document.querySelector(".q5-a2");
+let submitButton = document.querySelector(".submit-button");
+let result; 
+let resultDisplay = document.querySelector(".result-display");
 
 let petalColor;
 let stemColor;
 let faceColor;
 let mouthColor;
+let potColor;
 
 let mouth = document.querySelector(".flower__nose");
 let stem = document.querySelector(".flower__stem");
@@ -101,12 +105,14 @@ blackPotButton.addEventListener("click", function(){
     pot.style.boxShadow = "Black";
     potShadow.style.background = "Black";
     potBottom.style.background = "Black";
+    potColor = "Black";
 });
 brownPotButton.addEventListener("click", function(){
     pot.style.background = "#FF7043";
     pot.style.boxShadow = "#FF7043";
     potShadow.style.background = "#FF7043";
     potBottom.style.background = "#FF7043";
+    potColor = "Brown";
 });
 
 
@@ -117,4 +123,28 @@ lightRedMouthButton.addEventListener("click", function(){
 blackMouthButton.addEventListener("click", function(){
     mouthColor = "Black";
     mouth.style.background = "Black";
+});
+
+submitButton.addEventListener("click", function(){
+   console.log(petalColor);
+   console.log(stemColor);
+   console.log(mouthColor);
+   console.log(potColor);
+   console.log(faceColor);
+    if (potColor === "Brown" && petalColor === "Yellow"){
+        result = "Happy";
+        resultDisplay.innerHTML = result;
+    } else if (stemColor === "Dark Green" && mouthColor === "Black"){
+        result = "Sad";
+        resultDisplay.innerHTML = result;
+    } else if (faceColor === "Light Brown" && mouthColor === "Black"){
+        result = "Stressed";
+        resultDisplay.innerHTML = result;
+    } else if (stemColor === "Light Green" && petalColor === "Yellow"){
+        result = "Excited";
+        resultDisplay.innerHTML = result;
+    } else {
+        result = "Bored";
+        resultDisplay.innerHTML = result;
+    }
 });
